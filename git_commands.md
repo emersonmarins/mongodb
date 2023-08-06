@@ -54,7 +54,20 @@ Também é possível adicionar uma mensagem para a execução de um commit. Exem
 <!-- ADD to remote repository -->
 52. git branch -M main
 53. git push -u origin main
+54. git checkout -b "test" <!-- create a new branch and switch to created branch -->
 
+<!-- ERROR command PUSH -->
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+
+emerson@emerson:~/mongodbTest/aggregation_pipeline$ git config pull.rebase true 
+emerson@emerson:~/mongodbTest/aggregation_pipeline$ git pull https://github.com/emersonmarins/mongodb.git main
+From https://github.com/emersonmarins/mongodb
+ * branch            main       -> FETCH_HEAD
+Successfully rebased and updated refs/heads/main.
+
+==================================================================================
 
 6. git branch
 É comum na maior parte do tempo possuir múltiplas variações em seu repositório Git, chamadas de branches (“ramificações”). A grosso modo, um branch é um caminho independente de desenvolvimento, uma alternativa.
