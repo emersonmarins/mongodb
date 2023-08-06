@@ -59,6 +59,8 @@ Também é possível adicionar uma mensagem para a execução de um commit. Exem
 56. git branch <!-- shows the branch that were created -->
 57. git checkout main | git merge test 
 58. git pull <!-- get updates from remote repository -->
+59. git clean -f <!-- remove file that were not added "Untracked files:"-->
+60. git log <!--  Pressione a tecla q para sair do log de commits  -->
 
 <!-- ERROR command PUSH -->
 hint:   git config pull.rebase false  # merge
@@ -220,3 +222,7 @@ eval "$(ssh-agent -s)" <!-- Start key ssh -->
 ssh-add ~/.ssh/id_ed25519
 ssh-keygen -t ed25519-sk -C "emersonmarinscoutinho@gmail.com"
 cat ~/.ssh/id_ed25519.pub <!-- Copy key ssh -->
+
+https://www.freecodecamp.org/portuguese/news/10-comandos-do-git-que-todo-desenvolvedor-deveria-conhecer/
+
+https://www.codigofonte.com.br/artigos/top-25-comandos-do-git
