@@ -50,8 +50,13 @@ Também é possível adicionar uma mensagem para a execução de um commit. Exem
 <!-- $ git commit -m “seu comentário”.. -->
 
 
+51. git remote add origin https://github.com/emersonmarins/mongodb.git
+<!-- ADD to remote repository -->
+52. git branch -M main
+53. git push -u origin main
 
-5. git branch
+
+6. git branch
 É comum na maior parte do tempo possuir múltiplas variações em seu repositório Git, chamadas de branches (“ramificações”). A grosso modo, um branch é um caminho independente de desenvolvimento, uma alternativa.
 
 A princípio pode parecer fácil se perder em diversos caminhos, mas o comando git branch facilita o gerenciamento de tudo isso. Com diferentes parâmetros, é possível listar, criar ou apagar os branches.
@@ -189,3 +194,12 @@ Por fim, faça o merge da sua branch do recurso em dev:
 
 git merge <nome-da-branch-com-o-recurso>
 Dica: certifique-se de que sua branch dev tem a versão mais recente antes de fazer o merge de suas branches de recurso. Do contrário, você pode ter que lidar com conflitos e outros problemas indesejados.
+
+
+==========================================================
+CREATE KEY SSH
+ssh-keygen -t ed25519 -C "emersonmarinscoutinho@gmail.com"
+eval "$(ssh-agent -s)" <!-- Start key ssh -->
+ssh-add ~/.ssh/id_ed25519
+ssh-keygen -t ed25519-sk -C "emersonmarinscoutinho@gmail.com"
+cat ~/.ssh/id_ed25519.pub <!-- Copy key ssh -->
