@@ -55,6 +55,10 @@ Também é possível adicionar uma mensagem para a execução de um commit. Exem
 52. git branch -M main
 53. git push -u origin main
 54. git checkout -b "test" <!-- create a new branch and switch to created branch -->
+55. git push --set-upstream origin test <!-- when creating a new branch in the local repository -->
+56. git branch <!-- shows the branch that were created -->
+57. git checkout main | git merge test 
+58. git pull <!-- get updates from remote repository -->
 
 <!-- ERROR command PUSH -->
 hint:   git config pull.rebase false  # merge
