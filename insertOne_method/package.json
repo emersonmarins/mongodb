@@ -1,0 +1,14 @@
+{
+  "name": "insertone_method",
+  "version": "1.0.0",
+  "description": "test in the mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emerson Marins",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^5.7.0"
+  }
+}

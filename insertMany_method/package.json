@@ -1,0 +1,14 @@
+{
+  "name": "insertmany_method",
+  "version": "1.0.0",
+  "description": "insert many documents in mongodb atlas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emerson Marins",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^5.7.0"
+  }
+}
